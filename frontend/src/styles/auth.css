@@ -1,0 +1,121 @@
+.authPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f4ff;
+}
+
+.authContainer {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(136, 84, 208, 0.15);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.authContainer h2 {
+    margin-bottom: 20px;
+    color: #5e2ca5;
+}
+
+.authForm input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cdbfe4;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.authForm input:focus {
+    border-color: #a174e8;
+    box-shadow: 0 0 5px rgba(161, 116, 232, 0.5);
+}
+
+.authForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.authForm button:hover {
+    background-color: #5a189a;
+}
+
+.error-message {
+    color: #d6336c;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.redirect {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.redirect a {
+    color: #7b2cbf;
+    text-decoration: none;
+}
+
+.redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .authContainer {
+        padding: 20px 15px;
+    }
+
+    .authForm input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .authForm button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .authContainer h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .authContainer {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    .authForm input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .authForm button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .authContainer h2 {
+        font-size: 1.2rem;
+    }
+
+    .redirect {
+        font-size: 13px;
+    }
+}
